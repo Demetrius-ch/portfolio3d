@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header"
+import PageTransition from "../components/PageTransition"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -7,8 +10,10 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  weights: ["100", "200", "300","400","500", "600", "700", "800", "900"],
+  variable: "--font-geist-mono",
+  
 });
 
 export const metadata = {
@@ -22,7 +27,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+       <Header/>
+       <PageTransition>{children}</PageTransition>
+        
       </body>
     </html>
   );
