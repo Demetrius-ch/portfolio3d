@@ -1,5 +1,4 @@
 "use client";
-import { title } from "process";
 import {
   FaHtml5,
   FaCss3,
@@ -9,7 +8,20 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../../components/ui/tabs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../../components/ui/tooltip";
+import { ScrollArea } from "../../components/ui/scroll-area";
+import { motion } from "framer-motion";
 // about data
 const about = {
   title: "About me",
@@ -133,12 +145,72 @@ const education = {
 // skills data
 const skills = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "My Skylss",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugit molestias, vitae minus aut temporibus optio! Sapiente quidem, laudantium, distinctio minus dolores natus dolor neque quia iusto vel, excepturi repudiandae",
+  skillList: [
+    {
+      icon: <FaHtml5 />,
+      name: "html 5",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "css 3",
+    },
+    {
+      icon: <FaJs />,
+      name: "javascript",
+    },
+    {
+      icon: <FaReact />,
+      name: "react.js",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next.js",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "tailwind.css",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "node.js",
+    },
+    {
+      icon: <FaFigma />,
+      name: "figma",
+    },
+  ],
 };
 
 const Resume = () => {
-  return <div> resume page</div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    >
+      <div className="container mx-auto">
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col xl:flex-row gap-[60px]"
+        >
+          <TabsList className="">
+            <TabsTrigger>Expreience</TabsTrigger>
+            <TabsTrigger>Education</TabsTrigger>
+            <TabsTrigger>Skills</TabsTrigger>
+            <TabsTrigger>About me</TabsTrigger>
+          </TabsList>
+
+          {/** Content */}
+          <div>content</div>
+        </Tabs>
+      </div>
+    </motion.div>
+  );
 };
 export default Resume;
