@@ -115,7 +115,7 @@
 
 @layer base {
   body {
-    font-family: var(--font-sans);
+    font-family: Georgia, serif;
     background-color: black;
     color: white;
     line-height: 1.75;
