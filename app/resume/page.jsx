@@ -33,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: " (+236) 72 05 11 17 ",
+      fieldValue: " (+236) 000 558 264 479 ",
     },
     {
       fieldName: "Experience",
@@ -49,7 +49,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "triphelin@gmail.com",
+      fieldValue: "myemail@gmail.com",
     },
     {
       fieldName: "Freelance",
