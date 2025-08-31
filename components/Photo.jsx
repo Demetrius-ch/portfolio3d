@@ -22,12 +22,12 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[510px] xl:h-[438px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png"
+            src="/assets/photo.jpg"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain"
+            className="border rounded-full"
           />
         </motion.div>
 
@@ -38,7 +38,8 @@ const Photo = () => {
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.circle
+          {/*Le cercle n'est plus utile pour moi}
+         {/* <motion.circle
             cx="253"
             cy="253"
             r="250"
@@ -56,7 +57,7 @@ const Photo = () => {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-          />
+          />*/}
         </motion.svg>
       </motion.div>
     </div>

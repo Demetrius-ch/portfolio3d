@@ -4,10 +4,10 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  FaPython,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 import {
   Tabs,
   TabsContent,
@@ -24,8 +24,9 @@ import { ScrollArea } from "../../components/ui/scroll-area";
 import { motion } from "framer-motion";
 // about data
 const about = {
-  title: "About me",
-  description: "Sur cette page, vous trouverez tout ce qui me concerne. vous pourriez toute fois me contacter via mon mail ou mon mobile.",
+  title: "A Propos ",
+  description:
+    "Sur cette page, vous trouverez tout ce qui me concerne. vous pourriez toute fois me contacter via mon mail ou mon mobile.",
   info: [
     {
       fieldName: "Name",
@@ -33,11 +34,11 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: " (+236) 000 558 264 479 ",
+      fieldValue: " (+236) 72 05 11 17 / 75 48 39 42 ",
     },
     {
       fieldName: "Experience",
-      fieldValue: " 12+ Years",
+      fieldValue: " 04+ Years",
     },
     {
       fieldName: "Skype",
@@ -57,7 +58,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "French, English",
+      fieldValue: "French, English, Sano",
     },
   ],
 };
@@ -68,8 +69,19 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, hic quibusdam? Pariatur aliquam ipsam odit autem, officiis molestiae inventore, illo explicabo, nulla labore expedita distinctio corporis quae libero animi ipsa.",
+    "Dans cette section, vous trouverez un résumé de mes expériences professionnelles et stages, illustrant les compétences que j'ai développées et les projets auxquelles j'ai participé",
   items: [
+    {
+      company: "Caucus African",
+      position: "Collaborateur avec IKOUE",
+      duration: "Une semaine",
+    },
+    {
+      company: "Guiwara/Louma",
+      position:
+        "Collecte des données et prise de rendez-vous auprès des entreprises",
+      duration: " Un mois",
+    },
     {
       company: "IKOUE Developer",
       position: "Full Stack Developer",
@@ -108,11 +120,16 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, hic quibusdam? Pariatur aliquam ipsam odit autem, officiis molestiae inventore, illo explicabo, nulla labore expedita distinctio corporis quae libero animi ipsa.",
+    "Mon parcours éducatif reflète ma passion pour la technologie et mon engagement à apprendre continuellement. De la formation académique aux certifications en lignes, chaque étape m'a rapproché de mes objextifs professionles. ",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development JavaScript",
+      institution: "Believemy ",
+      degree: "Certfication en Taliwindcss",
+      duration: "2025",
+    },
+    {
+      institution: "Classroom",
+      degree: "Development JavaScript",
       duration: "2025",
     },
     {
@@ -147,7 +164,7 @@ const skills = {
   icon: "/assets/resume/cap.svg",
   title: "My Skylss",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugit molestias, vitae minus aut temporibus optio! Sapiente quidem, laudantium, distinctio minus dolores natus dolor neque quia iusto vel, excepturi repudiandae",
+    "Sur cette partie, vous trouverez l'ensemble des langages, frameworks et outils que j'ai appris et que je maîtrise.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -178,8 +195,12 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <FaPython />,
+      name: "python",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "typescrit",
     },
   ],
 };

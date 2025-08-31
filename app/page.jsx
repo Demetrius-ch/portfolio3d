@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 // components
 import Social from "../components/Social";
 import Photo from "../components/Photo";
-import Stats from "../components/Stats"
+import Stats from "../components/Stats";
 const Home = () => {
   return (
     <section className="h-full">
@@ -26,8 +26,8 @@ const Home = () => {
               <span className="text-emerald-600">Chandler Demetrius</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at creafting elegant digital experiences and I am
-              proficient in variaous programming languages and technologies.
+              Je crée des exprériences digitales élégantes et je maîtrise
+              plusieurs langages de programmation et technologies
             </p>
             {/**bouton et link */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -37,7 +37,7 @@ const Home = () => {
                 className="uppercase flex items-center gap-2 hover:bg-emerald-600 hover:text-black hover:transition-all duration-500"
               >
                 <span>Donwload CV</span>
-                <FiDownload className="text-xl" />
+                <FiDownload className="text-xl " />
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 };
