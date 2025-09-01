@@ -17,17 +17,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+236) 458 226 487",
+    description: "(+236) 72 05 11 17",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@gmail.com",
+    description: "lgdemetrius@gmail",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Résidence de la France, rue 219",
+    description: "Résidence de la France, Quartier Ouango",
   },
 ];
 
@@ -48,12 +48,14 @@ const Contact = () => {
           {/**form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-18 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-emerald-500">Let's work together</h3>
+              <h3 className="text-4xl text-emerald-500">
+                Me contacter en cas de besoin
+              </h3>
               <p className="text-white/60 ">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-                exercitationem numquam ducimus atque, omnis voluptatem harum
-                voluptates fugiat aliquam culpa veritatis, recusandae, sequi
-                doloremque in distinctio laborum? Esse, soluta quae.
+                Vous pourriez me contacter à tout moment. Je suis disponible.{" "}
+                <br /> Mais je tiens à vous rappeler que ma startup{" "}
+                <span className="text-emerald-500"> C-dev</span> est en cours de
+                construction.
               </p>
               {/**input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -69,7 +71,7 @@ const Contact = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
+                    <SelectLabel>Selectionner un service</SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
                     <SelectItem value="cst">UI/UX Design</SelectItem>
                     <SelectItem value="mst">Logo Design</SelectItem>

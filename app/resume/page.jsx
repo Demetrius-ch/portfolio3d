@@ -7,7 +7,14 @@ import {
   FaPython,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiFlutter,
+  SiGo,
+  SiPostgresql,
+} from "react-icons/si";
 import {
   Tabs,
   TabsContent,
@@ -30,7 +37,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: " Chandler Demetrius",
+      fieldValue: " Demetrius Le Grand",
     },
     {
       fieldName: "Phone",
@@ -38,27 +45,27 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: " 04+ Years",
+      fieldValue: " +04 ans",
     },
     {
       fieldName: "Skype",
       fieldValue: "chandler.01",
     },
     {
-      fieldName: "Nationnality",
-      fieldValue: " Central African",
+      fieldName: "Nationnalité",
+      fieldValue: " Centrafricaine",
     },
     {
       fieldName: "Email",
-      fieldValue: "myemail@gmail.com",
+      fieldValue: "triphelin@gmail.com",
     },
     {
       fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "French, English, Sano",
+      fieldName: "Langages",
+      fieldValue: "Sango, Français, English",
     },
   ],
 };
@@ -69,7 +76,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Dans cette section, vous trouverez un résumé de mes expériences professionnelles et stages, illustrant les compétences que j'ai développées et les projets auxquelles j'ai participé",
+    "Dans cette section, vous trouverez un résumé de mes expériences professionnelles et stages, illustrant les compétences que j'ai développées et les projets auxquel j'ai participé.",
   items: [
     {
       company: "Caucus African",
@@ -129,7 +136,7 @@ const education = {
     },
     {
       institution: "Classroom",
-      degree: "Development JavaScript",
+      degree: "Developpement JavaScript",
       duration: "2025",
     },
     {
@@ -149,7 +156,7 @@ const education = {
     },
     {
       institution: "Insitut Superieur de Technoligie",
-      degree: "Certifié en Génie Informatique",
+      degree: "Licence en Génie Informatique",
       duration: "2024 - 2025",
     },
     {
@@ -162,7 +169,7 @@ const education = {
 // skills data
 const skills = {
   icon: "/assets/resume/cap.svg",
-  title: "My Skylss",
+  title: "Mes compétences",
   description:
     "Sur cette partie, vous trouverez l'ensemble des langages, frameworks et outils que j'ai appris et que je maîtrise.",
   skillList: [
@@ -202,6 +209,18 @@ const skills = {
       icon: <SiTypescript />,
       name: "typescrit",
     },
+    {
+      icon: <SiFlutter />,
+      name: "flutter",
+    },
+    {
+      icon: <SiGo />,
+      name: "golang",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "postgresql",
+    },
   ],
 };
 
@@ -224,7 +243,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Expreience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="about">A propos</TabsTrigger>
           </TabsList>
 
           {/** Content */}

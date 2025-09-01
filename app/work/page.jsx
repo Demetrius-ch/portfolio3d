@@ -49,6 +49,7 @@ const projects = [
     live: "",
     github: "",
   },
+ 
 ];
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
