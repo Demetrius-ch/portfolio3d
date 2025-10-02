@@ -14,42 +14,45 @@ import {
 } from "../../components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderBtns from "../../components/WorkSliderBtns"
+import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Mon Pokedex",
+    title: "project React",
     description:
-      "Je vous enverrai plus tard le projet pour Frontend. C'est en cours de développement. Merci.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assets/work/1.png",
-    live: "",
-    github: "",
+      "Manipulation d'API (pokeApi) et firebase pour la base de données. ",
+    stack: [
+      { name: "React js" },
+      { name: "Tailwindcss" },
+      { name: "React router" },
+    ],
+    image: "/assets/work/pokedex.png",
+    live: "http://pokemon-api-nu-nine.vercel.app/",
+    github: "https://github.com/Demetrius-ch/pokemon-api",
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Ma première TODO list en react",
     title: "project 2",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/2.jpg",
-    live: "",
-    github: "",
+      "Application de gestion de tâches avec ajout, suppression et filtrage. Utilisation de local storage pour la persistance des données. (Pas encore disponible en ligne)",
+    stack: [{ name: "react" }, {name:"Nodemodulelecss"},{ name: "Tailwind.css" }, { name: "Node.js" }],
+    image: "/assets/work/todo.png",
+    live: "https://github.com/Demetrius-ch/pokemon-api",
+    github: "https://github.com/Demetrius-ch/todoList",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "startup cdev",
     title: "project 3",
-    description: "Cette partie est en cours de maintenance.",
-    stack: [{ name: "Next.jd" }, { name: "Taiwind.css" }],
+    description: "Site vitrine pour une startup de développement web. (En cours de construction)",
+    stack: [{ name: "Next.js" }, { name: "Taiwind.css" }, { name: "Nodejs" }, {name:"PostgreSQL"}],
     image: "/assets/work/3.webp",
     live: "",
-    github: "",
+    github: "https://github.com/Demetrius-ch",
   },
- 
 ];
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -89,7 +92,7 @@ const Work = () => {
                     <li key={index} className="text-xl text-emerald-500">
                       {item.name}
                       {/* Ajuster des virgules  tout en supprimant la dernière*/}
-                      {item !== project.stack.lenght - 1 && ","}
+                     {index < project.stack.length - 1 && ","}
                     </li>
                   );
                 })}
@@ -139,7 +142,7 @@ const Work = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/**overlay */}
-                      <div className="aboslute top-0 bottom-0 h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 h-full bg-black/10 z-10"></div>
                       {/**image */}
                       <div className="relative w-full h-full ">
                         <Image
@@ -154,7 +157,10 @@ const Work = () => {
                 );
               })}
               {/** slider buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-emerald-500 hover:bg-emerald-500-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-emerald-500 hover:bg-emerald-500-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              />
             </Swiper>
           </div>
         </div>
