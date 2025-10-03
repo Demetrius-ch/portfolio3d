@@ -1,10 +1,24 @@
+"use client";
 import { Button } from "../components/ui/button";
 import { FiDownload } from "react-icons/fi";
 // components
 import Social from "../components/Social";
 import Photo from "../components/Photo";
 import Stats from "../components/Stats";
+import Typed from "typed.js";
+import React from "react";
 const Home = () => {
+  const el = React.useRef(null);
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Demetrius", "Le Grand", "Concepteur Web"],
+      typeSpeed: 50,
+      loop: true, // Pour boucler
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -23,7 +37,7 @@ const Home = () => {
                * Donc à chaque fois qu'on spécifie une classe(h2-h3), on complète le reste avec ces classes.
                */}
               Bonjour, Je suis <br />{" "}
-              <span className="text-emerald-600">Demetrius Triphelin</span>
+              <span className="text-emerald-600" ref={el}></span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Je crée des exprériences digitales élégantes et je maîtrise
