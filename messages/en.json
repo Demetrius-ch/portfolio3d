@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "header": {
+    "hireMe": "Hire me"
+  },
+  "home": {
+    "title": "Hello, I am",
+    "subtitle": "Software Developer",
+    "description": "I create elegant digital experiences and master several programming languages and technologies.",
+    "downloadCV": "Download CV",
+    "typed": {
+      "name1": "Demetrius",
+      "name2": "Le Grand",
+      "name3": "Web Designer"
+    }
+  },
+  "contact": {
+    "title": "Contact me if needed",
+    "description": "You can contact me at any time. I am available. But I would like to remind you that my startup C-dev is under construction.",
+    "form": {
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "email": "Email address",
+      "phone": "Phone number",
+      "selectService": "Select a service",
+      "selectServiceLabel": "Select a service",
+      "webDevelopment": "Web Development",
+      "uiUxDesign": "UI/UX Design",
+      "logoDesign": "Logo Design",
+      "message": "Type your message here.",
+      "sendMessage": "Send message"
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "services": {
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "I design and develop websites optimized for all devices. My goal is to provide fast, secure platforms tailored to client needs, using the latest technologies."
+    },
+    "uiUxDesign": {
+      "title": "UI/UX Design",
+      "description": "I create smooth and aesthetic user experiences, focusing on ergonomics and accessibility. Each design is thought to maximize user engagement and satisfaction."
+    },
+    "logoDesign": {
+      "title": "Logo Design",
+      "description": "I design unique and professional logos that reflect your brand's vision and values. The goal: make an impact with a simple, relevant and striking visual."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Development",
+      "description": "I develop modern, smooth and well-thought Android and iOS applications. My goal is to offer an optimal user experience, with features adapted to real needs."
+    }
+  },
+  "work": {
+    "project": "project",
+    "liveProject": "Live project",
+    "githubRepository": "Github repository",
+    "projects": {
+      "pokedex": {
+        "category": "My Pokedex",
+        "title": "React project",
+        "description": "API manipulation (pokeApi) and firebase for the database."
+      },
+      "todo": {
+        "category": "My first TODO list in react",
+        "title": "Project 2",
+        "description": "Task management application with add, delete and filtering. Using local storage for data persistence. (Not yet available online)"
+      },
+      "startup": {
+        "category": "cdev startup",
+        "title": "Project 3",
+        "description": "Landing page for a web development startup. (Under construction)"
+      }
+    }
+  },
+  "stats": {
+    "yearsExperience": "Years of experience",
+    "projectsCompleted": "Projects completed",
+    "technologiesMastered": "Technologies mastered",
+    "codeCommits": "Code commits"
+  },
+  "resume": {
+    "tabs": {
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "about": "About"
+    },
+    "about": {
+      "title": "About",
+      "description": "On this page, you will find everything about me. However, you can contact me via my email or mobile.",
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "experience": "Experience",
+        "skype": "Skype",
+        "nationality": "Nationality",
+        "email": "Email",
+        "freelance": "Freelance",
+        "languages": "Languages"
+      }
+    },
+    "experience": {
+      "title": "My experience",
+      "description": "In this section, you will find a summary of my professional experiences and internships, illustrating the skills I have developed and the projects I have participated in."
+    },
+    "education": {
+      "title": "My education",
+      "description": "My educational journey reflects my passion for technology and my commitment to continuous learning. From academic training to online certifications, each step has brought me closer to my professional goals."
+    },
+    "skills": {
+      "title": "My skills",
+      "description": "In this section, you will find all the languages, frameworks and tools I have learned and mastered."
+    }
+  }
+}

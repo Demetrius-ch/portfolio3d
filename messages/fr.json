@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "resume": "CV",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "header": {
+    "hireMe": "Engagez-moi"
+  },
+  "home": {
+    "title": "Bonjour, Je suis",
+    "subtitle": "Sofware Developer",
+    "description": "Je crée des exprériences digitales élégantes et je maîtrise plusieurs langages de programmation et technologies.",
+    "downloadCV": "Télécharger CV",
+    "typed": {
+      "name1": "Demetrius",
+      "name2": "Le Grand",
+      "name3": "Concepteur Web"
+    }
+  },
+  "contact": {
+    "title": "Me contacter en cas de besoin",
+    "description": "Vous pourriez me contacter à tout moment. Je suis disponible. Mais je tiens à vous rappeler que ma startup C-dev est en cours de construction.",
+    "form": {
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "email": "Adresse email",
+      "phone": "Numéro de téléphone",
+      "selectService": "Sélectionner un service",
+      "selectServiceLabel": "Sélectionner un service",
+      "webDevelopment": "Développement Web",
+      "uiUxDesign": "Design UI/UX",
+      "logoDesign": "Design de Logo",
+      "message": "Tapez votre message ici.",
+      "sendMessage": "Envoyer le message"
+    },
+    "info": {
+      "phone": "Téléphone",
+      "email": "Email",
+      "address": "Adresse"
+    }
+  },
+  "services": {
+    "webDevelopment": {
+      "title": "Développement Web",
+      "description": "Je conçois et développe des sites web optimisés pour tous les supports. Mon objectif est de fournir des plateformes rapides, sécurisées et adaptées aux besoins du client, en utilisant les technologies les plus récentes."
+    },
+    "uiUxDesign": {
+      "title": "Design UI/UX",
+      "description": "Je crée des expériences utilisateur fluides et esthétiques, en mettant l'accent sur l'ergonomie et l'accessibilité. Chaque design est pensé pour maximiser l'engagement et la satisfaction des utilisateurs."
+    },
+    "logoDesign": {
+      "title": "Design de Logo",
+      "description": "Je conçois des logos uniques et professionnels qui reflètent la vision et les valeurs de votre marque. L'objectif : marquer les esprits avec un visuel simple, pertinent et impactant."
+    },
+    "mobileDevelopment": {
+      "title": "Développement mobile",
+      "description": "Je développe des applications Android et iOS modernes, fluides et bien pensées. Mon objectif est d'offrir une expérience utilisateur optimale, avec des fonctionnalités adaptées aux besoins réels."
+    }
+  },
+  "work": {
+    "project": "projet",
+    "liveProject": "Projet en ligne",
+    "githubRepository": "Dépôt GitHub",
+    "projects": {
+      "pokedex": {
+        "category": "Mon Pokedex",
+        "title": "Projet React",
+        "description": "Manipulation d'API (pokeApi) et firebase pour la base de données."
+      },
+      "todo": {
+        "category": "Ma première TODO list en react",
+        "title": "Projet 2",
+        "description": "Application de gestion de tâches avec ajout, suppression et filtrage. Utilisation de local storage pour la persistance des données. (Pas encore disponible en ligne)"
+      },
+      "startup": {
+        "category": "startup cdev",
+        "title": "Projet 3",
+        "description": "Site vitrine pour une startup de développement web. (En cours de construction)"
+      }
+    }
+  },
+  "stats": {
+    "yearsExperience": "Année de l'expérience",
+    "projectsCompleted": "Projets complets",
+    "technologiesMastered": "Technologies maîtrisées",
+    "codeCommits": "Code commits"
+  },
+  "resume": {
+    "tabs": {
+      "experience": "Expérience",
+      "education": "Éducation",
+      "skills": "Compétences",
+      "about": "À propos"
+    },
+    "about": {
+      "title": "À Propos",
+      "description": "Sur cette page, vous trouverez tout ce qui me concerne. Vous pourriez toutefois me contacter via mon mail ou mon mobile.",
+      "fields": {
+        "name": "Nom",
+        "phone": "Téléphone",
+        "experience": "Expérience",
+        "skype": "Skype",
+        "nationality": "Nationalité",
+        "email": "Email",
+        "freelance": "Freelance",
+        "languages": "Langues"
+      }
+    },
+    "experience": {
+      "title": "Mon expérience",
+      "description": "Dans cette section, vous trouverez un résumé de mes expériences professionnelles et stages, illustrant les compétences que j'ai développées et les projets auxquels j'ai participé."
+    },
+    "education": {
+      "title": "Mon éducation",
+      "description": "Mon parcours éducatif reflète ma passion pour la technologie et mon engagement à apprendre continuellement. De la formation académique aux certifications en ligne, chaque étape m'a rapproché de mes objectifs professionnels."
+    },
+    "skills": {
+      "title": "Mes compétences",
+      "description": "Sur cette partie, vous trouverez l'ensemble des langages, frameworks et outils que j'ai appris et que je maîtrise."
+    }
+  }
+}
+

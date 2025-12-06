@@ -1,47 +1,42 @@
 "use client";
-import { Button } from "../components/ui/button";
+import { Button } from "../../components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { useTranslations } from 'next-intl';
 // components
-import Social from "../components/Social";
-import Photo from "../components/Photo";
-import Stats from "../components/Stats";
+import Social from "../../components/Social";
+import Photo from "../../components/Photo";
+import Stats from "../../components/Stats";
 import Typed from "typed.js";
 import React from "react";
+
 const Home = () => {
+  const t = useTranslations('home');
   const el = React.useRef(null);
+  
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Demetrius", "Le Grand", "Concepteur Web"],
+      strings: [t('typed.name1'), t('typed.name2'), t('typed.name3')],
       typeSpeed: 50,
-      loop: true, // Pour boucler
+      loop: true,
     });
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [t]);
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/**text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Développeur de logiciels.</span>
+            <span className="text-xl">{t('subtitle')}</span>
             <h1 className="text-[48px] xl:text-[80px] leading-[1.1] font-semibold mb-6">
-              {/* La base de données, à le faire plus tard
-               ceci nous permettrait de choisir notre langage.
-             */}
-              {/**pour h2 on utilise cette classe:
-               * xl:text-[80px] leading-[1.1]
-               * et pour h3:
-               * xl:text-[24px] leading-[1.1]
-               * Donc à chaque fois qu'on spécifie une classe(h2-h3), on complète le reste avec ces classes.
-               */}
-              Bonjour, Je suis <br />{" "}
+              {t('title')} <br />{" "}
               <span className="text-emerald-600" ref={el}></span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Je crée des exprériences digitales élégantes et je maîtrise
-              plusieurs langages de programmation et technologies.
+              {t('description')}
             </p>
             {/**bouton et link */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -50,7 +45,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2 hover:bg-emerald-600 hover:text-black hover:transition-all duration-500"
               >
-                <span>Donwload CV</span>
+                <span>{t('downloadCV')}</span>
                 <FiDownload className="text-xl " />
               </Button>
               <div className="mb-8 xl:mb-0">
@@ -72,3 +67,4 @@ const Home = () => {
 };
 
 export default Home;
+
