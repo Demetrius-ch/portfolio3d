@@ -34,14 +34,14 @@ const projects = [
   },
   {
     num: "02",
-    category: "Ma première TODO list en react",
-    title: "project 2",
+    category: "Apps Store",
+    title: "projet Next.js e‑commerce",
     description:
-      "Application de gestion de tâches avec ajout, suppression et filtrage. Utilisation de local storage pour la persistance des données. (Pas encore disponible en ligne)",
-    stack: [{ name: "react" }, {name:"Nodemodulelecss"},{ name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/todo.png",
-    live: "https://github.com/Demetrius-ch/pokemon-api",
-    github: "https://github.com/Demetrius-ch/todoList",
+      "Store d’applications moderne avec filtrage et mise en avant des apps. Développé avec Next.js, TypeScript et Tailwind CSS, déployé sur Vercel.",
+    stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }],
+    image: "/assets/work/store.png",
+    live: "https://apps-stores.vercel.app/",
+    github: "https://github.com/Demetrius-ch",
   },
   {
     num: "03",
@@ -140,11 +140,11 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-3xl overflow-hidden">
                       {/**overlay */}
                       <div className="absolute top-0 bottom-0 h-full bg-black/10 z-10"></div>
                       {/**image */}
-                      <div className="relative w-full h-full ">
+                      <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill

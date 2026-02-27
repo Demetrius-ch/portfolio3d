@@ -134,4 +134,17 @@
   .text-outline:hover {
     -webkit-text-stroke: 1px #00ff99;
   }
+
+  /* Typed.js : curseur inline, pas d'espace ni saut de ligne */
+  .typed-cursor {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    line-height: inherit;
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
 }

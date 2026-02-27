@@ -40,10 +40,10 @@ const Work = () => {
       category: t('projects.todo.category'),
       title: t('projects.todo.title'),
       description: t('projects.todo.description'),
-      stack: [{ name: "react" }, {name:"Nodemodulelecss"},{ name: "Tailwind.css" }, { name: "Node.js" }],
-      image: "/assets/work/todo.png",
-      live: "https://github.com/Demetrius-ch/pokemon-api",
-      github: "https://github.com/Demetrius-ch/todoList",
+      stack: [{ name: "Next.js" }, { name: "TypeScript" },{ name: "Tailwind CSS" }],
+      image: "/assets/work/store.png",
+      live: "https://apps-stores.vercel.app/",
+      github: "https://github.com/Demetrius-ch",
     },
     {
       num: "03",
@@ -139,11 +139,11 @@ const Work = () => {
               {projects.map((proj, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-3xl overflow-hidden">
                       {/**overlay */}
                       <div className="absolute top-0 bottom-0 h-full bg-black/10 z-10"></div>
                       {/**image */}
-                      <div className="relative w-full h-full ">
+                      <div className="relative w-full h-full">
                         <Image
                           src={proj.image}
                           fill

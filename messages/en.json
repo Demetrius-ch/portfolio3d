@@ -71,9 +71,9 @@
         "description": "API manipulation (pokeApi) and firebase for the database."
       },
       "todo": {
-        "category": "My first TODO list in react",
-        "title": "Project 2",
-        "description": "Task management application with add, delete and filtering. Using local storage for data persistence. (Not yet available online)"
+        "category": "Apps Store",
+        "title": "Next.js project",
+        "description": "Modern apps store with filtering and highlighted apps. Built with Next.js, TypeScript and Tailwind CSS, deployed on Vercel."
       },
       "startup": {
         "category": "cdev startup",

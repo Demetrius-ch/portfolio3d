@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -18,7 +19,11 @@ export const metadata = {
 
 // Root layout must contain html and body tags
 // The middleware will redirect to /fr or /en
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="fr" suppressHydrationWarning>
       <body
@@ -30,3 +35,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

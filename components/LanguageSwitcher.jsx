@@ -16,9 +16,22 @@ const LanguageSwitcher = () => {
   const pathname = usePathname();
 
   const switchLocale = (newLocale) => {
-    // Remplacer la locale actuelle dans le pathname
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPathname);
+    if (pathname === "/") {
+      // Depuis la racine, aller directement vers /{locale}
+      router.push(`/${newLocale}`);
+      return;
+    }
+
+    // Si l'URL commence déjà par /fr ou /en, on remplace cette partie
+    const localePrefix = `/${locale}`;
+    if (pathname.startsWith(localePrefix)) {
+      const rest = pathname.slice(localePrefix.length) || "";
+      router.push(`/${newLocale}${rest}`);
+      return;
+    }
+
+    // Fallback : préfixer le chemin courant par la nouvelle locale
+    router.push(`/${newLocale}${pathname}`);
   };
 
   return (
