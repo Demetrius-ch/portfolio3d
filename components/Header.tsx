@@ -36,7 +36,13 @@ const Header = () => {
           <Nav />
           <LanguageSwitcher />
           <Link href={`/${locale}/contact`}>
-            <Button>{t("hireMe")}</Button>
+            <Button
+              variant="default"
+              size="md"
+              className="px-6 h-[48px] uppercase tracking-[2px]"
+            >
+              {t("hireMe")}
+            </Button>
           </Link>
         </div>
         <div className="xl:hidden flex items-center gap-4">
